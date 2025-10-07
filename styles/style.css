@@ -137,6 +137,61 @@ header {
   text-transform: uppercase;
   text-decoration: none;
 }
+/* Gradient related styles */
+.gradient {
+  margin: 100px 140px;
+  height: 482px;
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 0, 0, 0.1),
+    rgba(255, 0, 0, 0) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.venue {
+  font-family: "Inter";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.red-text {
+  color: #f00;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px; /* 175% */
+  text-transform: capitalize;
+}
+#btn-style {
+  display: inline-flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #f00;
+  border: none;
+  margin-top: 40px;
+  color: #fff;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
 /* phone */
 @media screen and (max-width: 576.01px) {
   header {
@@ -164,7 +219,7 @@ header {
     width: 100%;
   }
   .banner {
-    margin: 10px auto;
+    margin: 100px auto;
     width: 100%;
     height: 100%;
     flex-direction: column;
@@ -185,6 +240,15 @@ header {
   .banner img {
     width: 80%;
   }
+  .gradient {
+    margin: 100px auto;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+  }
+  .venue {
+    font-size: 25px;
+  }
 }
 /* tablet */
 @media screen and (min-width: 577px) and (max-width: 1025px) {
@@ -200,5 +264,11 @@ header {
     height: 100%;
     flex-direction: column;
     justify-content: center;
+  }
+  .gradient {
+    margin: 100px auto;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
   }
 }
