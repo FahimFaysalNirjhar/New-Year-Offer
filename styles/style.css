@@ -77,3 +77,9 @@ header {
     font-size: 45px;
   }
 }
+/* tablet */
+@media screen and (min-width: 576.01px) and (max-width: 1024px) {
+  header {
+    margin: 10px;
+  }
+}
