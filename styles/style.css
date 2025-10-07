@@ -251,6 +251,51 @@ header {
   font-weight: 400;
   line-height: 20px; /* 160% */
 }
+/* holiday sales related styles */
+.holiday-sale {
+  margin: 100px 140px;
+}
+.holiday-sub-title {
+  color: #070211;
+  font-family: "Inter";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+.holiday-title {
+  color: #070211;
+  font-family: "Merriweather";
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-top: 10px;
+  margin-bottom: 28px;
+}
+#color-text {
+  color: #f00;
+  text-align: center;
+  font-family: "Merriweather";
+}
+.holiday-details {
+  color: rgba(7, 2, 17, 0.6);
+  text-align: center;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 160% */
+  width: 882px;
+  margin-top: 0;
+}
+.holiday-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /* phone */
 @media screen and (max-width: 576.01px) {
   header {
@@ -329,6 +374,13 @@ header {
   .offer-details {
     width: 90%;
   }
+  .holiday-details {
+    width: 100%;
+  }
+  .holiday-sale {
+    margin: 100px auto;
+    text-align: center;
+  }
 }
 /* tablet */
 @media screen and (min-width: 577px) and (max-width: 1025px) {
@@ -372,5 +424,11 @@ header {
   .offer-details {
     width: 90%;
     margin: 0 auto;
+  }
+  .holiday-details {
+    width: 100%;
+  }
+  .holiday-sale {
+    margin: 100px auto;
   }
 }
