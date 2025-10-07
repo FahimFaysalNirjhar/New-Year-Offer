@@ -296,6 +296,26 @@ header {
   justify-content: center;
   align-items: center;
 }
+.red img {
+  width: 100%;
+}
+.box {
+  position: relative;
+}
+.red {
+  position: relative;
+  top: 463px;
+  z-index: 1;
+}
+.gift {
+  position: relative;
+  z-index: 5;
+}
+.round {
+  position: absolute;
+  left: 710px;
+  bottom: 170px;
+}
 /* phone */
 @media screen and (max-width: 576.01px) {
   header {
@@ -381,6 +401,25 @@ header {
     margin: 100px auto;
     text-align: center;
   }
+  .round {
+    position: relative;
+    bottom: 241px;
+    left: -10px;
+    z-index: 10;
+  }
+  .round img {
+    width: 30%;
+  }
+  .gift {
+    position: relative;
+    z-index: 1;
+  }
+  .gift img {
+    width: 100%;
+  }
+  .red img {
+    display: none;
+  }
 }
 /* tablet */
 @media screen and (min-width: 577px) and (max-width: 1025px) {
@@ -430,5 +469,23 @@ header {
   }
   .holiday-sale {
     margin: 100px auto;
+  }
+  .round {
+    position: absolute;
+    left: 450px;
+    bottom: 170px;
+  }
+  .round img {
+    width: 100%;
+  }
+}
+/* small laptop */
+@media screen and (min-width: 1025.01px) and (max-width: 1300px) {
+  .coming-soon {
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
   }
 }
