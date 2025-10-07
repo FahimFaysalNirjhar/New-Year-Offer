@@ -359,6 +359,58 @@ header {
 .bag img {
   width: 100%;
 }
+/* newsletter related styles */
+.newsletter {
+  border-radius: 16px;
+  background: rgba(255, 0, 0, 0.05);
+  height: 500px;
+  margin: 100px 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter-title {
+  color: #070211;
+  text-align: center;
+  font-family: "Merriweather";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.newsletter-details {
+  color: rgba(7, 2, 17, 0.6);
+  text-align: center;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
+  width: 896px;
+}
+.newsletter-img-container img {
+  width: 100%;
+}
+form input[type="email"] {
+  border-radius: 50px 0px 0px 50px;
+  padding: 25px 30px;
+  width: 300px;
+  border: none;
+}
+form input[type="submit"] {
+  border-radius: 0 50px 50px 0;
+  background: #f00;
+  padding: 25px 30px;
+  position: relative;
+  left: -6px;
+  border: none;
+  width: 200px;
+  color: #fff;
+  font-weight: 600;
+}
 /* phone */
 @media screen and (max-width: 576.01px) {
   header {
@@ -485,6 +537,21 @@ header {
   .portfolio-subtitle {
     text-align: center;
   }
+  .newsletter {
+    margin: 100px auto;
+    text-align: center;
+    height: 100%;
+    padding-bottom: 20px;
+  }
+  .newsletter-details {
+    width: 100%;
+  }
+  form input[type="email"] {
+    width: 30%;
+  }
+  form input[type="submit"] {
+    width: 40%;
+  }
 }
 /* tablet */
 @media screen and (min-width: 577px) and (max-width: 1025px) {
@@ -565,6 +632,15 @@ header {
   }
   .portfolio-subtitle {
     text-align: center;
+  }
+  .newsletter {
+    margin: 100px auto;
+    text-align: center;
+    height: 100%;
+    padding-bottom: 20px;
+  }
+  .newsletter-details {
+    width: 100%;
   }
 }
 /* small laptop */
