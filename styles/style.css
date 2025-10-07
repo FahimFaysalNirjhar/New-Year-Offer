@@ -52,9 +52,45 @@ header {
   height: 190px;
   margin: 0;
 }
-
+/* Off related styles */
+.off {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.off-title {
+  color: rgba(255, 0, 0, 1);
+  font-family: "Inter";
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.off-sub-title {
+  color: rgba(255, 0, 0, 1);
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.off-little-title {
+  color: #070211;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 20px;
+}
 /* phone */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 576.01px) {
   header {
     margin: 10px auto;
     width: 100%;
@@ -76,10 +112,16 @@ header {
     height: 100%;
     font-size: 45px;
   }
+  .off img {
+    width: 100%;
+  }
 }
 /* tablet */
-@media screen and (min-width: 576.01px) and (max-width: 1024px) {
+@media screen and (min-width: 577px) and (max-width: 1025px) {
   header {
     margin: 10px;
+  }
+  .off img {
+    width: 100%;
   }
 }
